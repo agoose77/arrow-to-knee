@@ -24,15 +24,23 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = []
+# BEGIN DEPS
+dependencies = [
+  "numpy<2;python_version<\"3.12\""
+]
+# END DEPS
 
 [project.urls]
 Documentation = "https://github.com/Angus Hollands/arrow-to-knee#readme"
 Issues = "https://github.com/Angus Hollands/arrow-to-knee/issues"
 Source = "https://github.com/Angus Hollands/arrow-to-knee"
 
+# BEGIN: scripts
+
 [tool.hatch.version]
 path = "src/arrow_to_knee/__about__.py"
+
+# END: scripts
 
 [tool.hatch.envs.types]
 extra-dependencies = [
