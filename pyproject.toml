@@ -26,6 +26,7 @@ classifiers = [
 ]
 dependencies = [
   "numpy<2;python_version<\"3.12\""
+  "numpy>1"
 ]
 [project.optional-dependencies]
 cli = ["rich"]
