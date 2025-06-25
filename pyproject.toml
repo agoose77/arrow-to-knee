@@ -38,6 +38,10 @@ Source = "https://github.com/Angus Hollands/arrow-to-knee"
 [project.scripts]
 remove-arrow = "arrow_to_knee.cli:remove_arrow"
 
+[project.entry-points."history_of_war"]
+hit_by_arrow = "arrow_to_knee.plugin:plugin"
+
+
 [tool.hatch.version]
 path = "src/arrow_to_knee/__about__.py"
 
